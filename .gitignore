@@ -1,5 +1,6 @@
 # Testing
 dist/index.html
+.vscode/
 
 # MacOS
 .DS_Store
