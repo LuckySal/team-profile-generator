@@ -1,5 +1,26 @@
 {
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "A CLI for generating a webpage for a coding team",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuckySal/team-profile-generator.git"
+  },
+  "author": "Brandon Hill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LuckySal/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/LuckySal/team-profile-generator#readme",
   "dependencies": {
     "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.2.2"
   }
 }
