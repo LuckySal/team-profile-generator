@@ -1,3 +1,9 @@
+# Testing
+dist/index.html
+
+# MacOS
+.DS_Store
+
 # Logs
 logs
 *.log
@@ -80,7 +86,7 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# dist
 
 # Gatsby files
 .cache/
