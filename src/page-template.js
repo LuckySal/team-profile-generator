@@ -90,7 +90,7 @@ module.exports = (team) => {
         </head>
         <body>
             <header class="py-4">
-                <h1 class="text-center">My Team</h1>
+                <h1 class="text-center text-white">My Team</h1>
             </header>
             <main class="container">
                 <div class="row">
