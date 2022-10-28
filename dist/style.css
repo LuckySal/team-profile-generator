@@ -1,0 +1,12 @@
+:root {
+    --red: rgb(190, 38, 38);
+    --blue: rgb(32, 32, 185);
+}
+
+header {
+    background-color: var(--red);
+}
+
+.custom-card-header {
+    background-color: var(--blue);
+}

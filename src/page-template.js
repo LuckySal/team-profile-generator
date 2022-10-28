@@ -3,13 +3,14 @@ const Engineer = require("../lib/Engineer");
 const Intern = require("../lib/Intern");
 
 const generateTeam = (team) => {
-    // create the manager html
     const generateManager = (manager) => {
         return `<div class="col-sm-4">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title text-center">Manager</h5>
-                <h6 class="card-title text-center">${manager.getName()}</h6>
+                <div class="card-header custom-card-header">
+                    <h5 class="card-title text-center text-white">Manager</h5>
+                    <h6 class="card-title text-center text-white">${manager.getName()}</h6>
+                </div>
                 <ul class="list-group">
                     <li class="list-group-item">Employee ID: ${manager.getId()}</li>
                     <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
@@ -21,13 +22,14 @@ const generateTeam = (team) => {
     `;
     };
 
-    // create the html for engineers
     const generateEngineer = (engineer) => {
         return `<div class="col-sm-4">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title text-center">Engineer</h5>
-                <h6 class="card-title text-center">${engineer.getName()}</h6>
+                <div class="card-header custom-card-header">
+                    <h5 class="card-title text-center text-white">Engineer</h5>
+                    <h6 class="card-title text-center text-white">${engineer.getName()}</h6>
+                </div>
                 <ul class="list-group">
                     <li class="list-group-item">Employee ID: ${engineer.getId()}</li>
                     <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
@@ -39,13 +41,14 @@ const generateTeam = (team) => {
     `;
     };
 
-    // create the html for interns
     const generateIntern = (intern) => {
         return `<div class="col-sm-4">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title text-center">Intern</h5>
-                <h6 class="card-title text-center">${intern.getName()}</h6>
+                <div class="card-header custom-card-header">
+                    <h5 class="card-title text-center text-white">Intern</h5>
+                    <h6 class="card-title text-center text-white">${intern.getName()}</h6>
+                </div>
                 <ul class="list-group">
                     <li class="list-group-item">Employee ID: ${intern.getId()}</li>
                     <li class="list-group-item">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
@@ -57,7 +60,6 @@ const generateTeam = (team) => {
     `;
     };
 
-    // use the team array to generate pieces of html based on the employee role
     let body = "";
     team.forEach(element => {
         if (element instanceof Manager) {
@@ -72,7 +74,6 @@ const generateTeam = (team) => {
 };
 
 module.exports = (team) => {
-    // template literal - html body that calls the generate team function
     return `<!DOCTYPE html>
     <html lang="en">
         <head>
@@ -88,7 +89,7 @@ module.exports = (team) => {
             <title>Team</title>
         </head>
         <body>
-            <header>
+            <header class="py-4">
                 <h1 class="text-center">My Team</h1>
             </header>
             <main class="container">
