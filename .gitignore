@@ -1,5 +1,5 @@
 # Testing
-dist/index.html
+dist/*.html
 .vscode/
 
 # MacOS
